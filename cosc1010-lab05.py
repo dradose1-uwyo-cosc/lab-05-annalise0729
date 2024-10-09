@@ -1,12 +1,10 @@
-# Your Name Here
+# Annalise Gade
 # UWYO COSC 1010
-# Submission Date
+# Submission Date: 10/13/24
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Lab Section: 15
+# Sources, people worked with, help given to: Lecture notes
+# No further comments
 
 max_temps = [
     32, 24, 22, 25, 37, 33, 34, 40, 40, 42,
@@ -95,6 +93,18 @@ min_temps = [
 # The use of len() is fine
 # You can do this in two individual loops, or a single loop if you wish 
 
+# Initialize variables
+max_temp = 0
+min_temp = 0
+
+for temp_max in range(len(max_temps)):
+    if max_temps[temp_max] >= max_temp:
+        max_temp = max_temps[temp_max]
+
+for temp_min in range(len(min_temps)):
+    if min_temps[temp_min] <= min_temp :
+        min_temp = min_temps[temp_min]
+
 print(f"Max temp = {max_temp}")
 print(f"Min temp = {min_temp}")
 
@@ -103,12 +113,34 @@ numbers = [-61, -76, 94, 21, 97, -4, 21, 56, -26, 9, 100, 56, -7, -32, 60, -68, 
 # Count how many positive numbers occur, how many negative numbers occur, and how many times 0 occurs
 # You should print the number and the result within an f-string 
 # Example output: 83 is positive
+pos_count = 0
+neg_count = 0
+zero_count = 0
+
+for i in range(len(numbers)):
+    if numbers[i] > 0:
+        pos_count += 1
+        print(f'{numbers[i]} is positive')
+    elif numbers[i] < 0:
+        neg_count += 1
+        print(f'{numbers[i]} is negative')
+    else:
+        zero_count += 1
+        print(f'{numbers[i]} is zero')
 
 print(f'There are {pos_count} positive numbers')
 print(f'There are {neg_count} negative numbers')
 print(f"Zero occurred {zero_count} time(s)")
 # Given the same numbers list, give the sum of all positive numbers, and the sum of all negative numbers
 # This should be done within a single loop
+pos_sum = 0
+neg_sum = 0
+
+for j in range(len(numbers)):
+    if numbers[j] > 0:
+        pos_sum += numbers[j]
+    else:
+        neg_sum += numbers[j]
 
 print(f"Sum of positive numbers {pos_sum}")
 print(f"Sum of negative numbers {neg_sum}")
