@@ -120,13 +120,13 @@ zero_count = 0
 for i in range(len(numbers)):
     if numbers[i] > 0:
         pos_count += 1
-        print(f'{numbers[i]} is positive')
+        # print(f'{numbers[i]} is positive')
     elif numbers[i] < 0:
         neg_count += 1
-        print(f'{numbers[i]} is negative')
+        # print(f'{numbers[i]} is negative')
     else:
         zero_count += 1
-        print(f'{numbers[i]} is zero')
+        # print(f'{numbers[i]} is zero')
 
 print(f'There are {pos_count} positive numbers')
 print(f'There are {neg_count} negative numbers')
