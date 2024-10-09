@@ -1,12 +1,7 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Annalise Gade]
+## [Lab05]
+## [Submission date: 10/13/24]
 ## Worked with/sources 
-* example
-* example
-* example
-* example
+* Lecture notes
 ## Project Quirks/ Things that don't work
-* example
-* example
-* example
+* N/A
